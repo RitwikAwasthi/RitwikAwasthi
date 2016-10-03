@@ -54,14 +54,19 @@ a {
       margin-left: 0; } }
 
 .page-header {
+  display: inline-block;
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #ffcc66); }
+  background-image: linear-gradient(120deg, #155799, #ffcc66);
+  position: fixed;
+  width: 100%;
+}
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 1rem 1rem; } 
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
@@ -105,14 +110,16 @@ a {
     font-size: 1rem; } }
 
 .main-content :first-child {
-  margin-top: 0; }
+  margin-top: 30%; }
 .main-content img {
   max-width: 100%; }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #ffcc66;
+  text-align: center;
+}
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -221,9 +228,13 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  padding-top: px;
+  margin-top: -200px;
+  border-top: solid 1px #eff0f1;
+  align: center;
+  align-content: center;
+  text-align: center;
+}
 
 .site-footer-owner {
   display: block;
@@ -243,3 +254,32 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+h3 {
+    margin: auto;
+    width: 50%;
+    font-size: 
+}
+
+p{
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    
+}
+#footbar {
+    margin: auto;
+    display: block;
+    background-color: black;
+    width: 1000%;
+    height: 5px;
+    margin-left: -500%;
+}
+#footbartop {
+    margin: auto;
+    background-color: black;
+    width: 1000%;
+    height: 5px;
+    margin-left: -500%;
+    position: relative;
+    top: 20px
+}
