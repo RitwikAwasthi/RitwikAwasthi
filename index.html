@@ -2,25 +2,82 @@
 <!DOCTYPE html>
     <html>
     <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href= "stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="scripts/jquery-3.1.1.min.js"></script>           
+    
+    <script>
+    $(document).ready(function(){
+       $("#button3").click(function(){
+           $("#videoFrame").hide();
+           $("#sc").show();
+           $("#art").hide();
+           $("#about").hide()
+       }); 
+       $("#button1").click(function(){
+           $("#videoFrame").show();
+           $("#sc").hide();
+           $("#art").hide();
+           $("#about").hide()
+       });
+       $("#button4").click(function(){
+           $("#art").show();
+           $("#sc").hide();
+           $("#videoFrame").hide();
+           $("#about").hide();
+       });
+       $("#button2").click(function(){
+           $("#about").show();
+           $("#art").hide();
+           $("#sc").hide();
+           $("#videoFrame").hide();
+       });
+    });
+    </script>
+    
     <title>Ritwik Awasthi | Home </title>    
     </head>
     <body>
-    <div id = "headerbar"><p id = "name">Ritwik Awasthi</p><p id = "subtitle">Computer Science</p></div>
-    <div id = "sectionOne">
-        <h1>
-        <img src= "images/IMG_0104.JPG(1).JPG" height = "600px" width="580px"  id = "profileImg" >
-        
-            <p id = "aboutMe">Hello, and welcome to my website! A little bit about myself: Originally born in India, I spent the first few years of my life growing up in New Delhi. By the age of 7, I moved to Mumbai (a.k.a Bombay) where I spent the majority of my life. In 2013 I moved to Atlanta, Georgia and complted my high school before atteneding The University of Colorado at Boulder. I am currently a sophomore (2016) pursuing a degree in Computer Science and Engineering. Outside of school, I have to lot of hobbies and interests that I like to spend my time on, including working on projects like this website. I also like to spend my time on Producing Music, 3D modelling (C4D), Photography, Digital Art, and Snowboarding. Considering that I spend a lot of time on these activities, I created this website to document and showcase my creations to my peers and employers.  </p>
+   <div class="container-fluid" id="mainCont">
+        <div class="row" id="mainRow">
             
-        </h1>
-        
-        
-        
-        
-        
-        </div>
-    <div id = "sectionTwo"></div>
-    <div id = "sectionThree"></div>   
+            
+            <div class="col-lg-6 col-xs-6 col-sm-6" id="menuFrame">
+            <div id="title1"> 
+            <p id="nameT">Ritwik Awasthi</p>
+            <p id="subT">Computer Science | University of Colorado at Boulder</p>
+                
+                
+                
+            </div>
+            <div id="button1"><p id="homeT">Home.</p></div>
+            <div id="button2"><p id="aboutT">About.</p></div>
+            <div id="button3"><p id="scT">Soundcloud.</p></div>
+            <div id="button4"><p id="artT">Art/Graphic Design.</p></div>
+            
+            
+            
+            </div>
+            
+            
+            
+            <div class="col-lg-6 col-xs-6 col-sm-6" id="sideFrame">
+            
+            <div id="videoFrame" class="current">
+            <video id = "video1" poster="video1.png" autoplay="true" loop>
+            <source src="video1.webm">    
+            </video>
+            </div>
+            <div id="sc"></div>
+            <div id="art"></div>
+            <div id="about"></div>
+            
+            </div>
+
+       
+       
+    </div>    
+    </div>
     </body>
     </html>
