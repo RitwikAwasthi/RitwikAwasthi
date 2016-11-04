@@ -1,0 +1,83 @@
+<! NB : #0F1626, LT: #AB987A, CR: #FF533D, #F5F5F5>
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href= "stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="scripts/jquery-3.1.1.min.js"></script>           
+    
+    <script>
+    $(document).ready(function(){
+       $("#button3").click(function(){
+           $("#videoFrame").hide();
+           $("#sc").show();
+           $("#art").hide();
+           $("#about").hide()
+       }); 
+       $("#button1").click(function(){
+           $("#videoFrame").show();
+           $("#sc").hide();
+           $("#art").hide();
+           $("#about").hide()
+       });
+       $("#button4").click(function(){
+           $("#art").show();
+           $("#sc").hide();
+           $("#videoFrame").hide();
+           $("#about").hide();
+       });
+       $("#button2").click(function(){
+           $("#about").show();
+           $("#art").hide();
+           $("#sc").hide();
+           $("#videoFrame").hide();
+       });
+    });
+    </script>
+    
+    <title>Ritwik Awasthi | Home </title>    
+    </head>
+    <body>
+   <div class="container-fluid" id="mainCont">
+        <div class="row" id="mainRow">
+            
+            
+            <div class="col-lg-6 col-xs-6 col-sm-6" id="menuFrame">
+            <div id="title1"> 
+            <p id="nameT">Ritwik Awasthi</p>
+            <p id="subT">Computer Science | University of Colorado at Boulder</p>
+                
+                
+                
+            </div>
+            <div id="button1"><p id="homeT">Home.</p></div>
+            <div id="button2"><p id="aboutT">About.</p></div>
+            <div id="button3"><p id="scT">Soundcloud.</p></div>
+            <div id="button4"><p id="artT">Art/Graphic Design.</p></div>
+            
+            
+            
+            </div>
+            
+            
+            
+            <div class="col-lg-6 col-xs-6 col-sm-6" id="sideFrame">
+            
+            <div id="videoFrame" class="current">
+            <video id = "video1" poster="video1.png" autoplay="true" loop>
+            <source src="video1.webm">    
+            </video>
+            </div>
+            <div id="sc"></div>
+            <div id="art"></div>
+            <div id="about"></div>
+            
+            </div>
+
+       
+       
+    </div>    
+    </div>
+    </body>
+    </html>
