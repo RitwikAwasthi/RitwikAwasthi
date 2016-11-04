@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "tw";
+    src:url("EuropeanTypewriter.ttf");
+}
 #headerbar {
     background-color: #0F1626;
     width: 100%;
@@ -14,6 +18,8 @@ html{
     border: 0px;
     padding: 0px;
     background-color: #0F1626;
+    height: 100vh;
+    width: 100vw;
 }
 #name {
     padding: 0px;
@@ -79,4 +85,121 @@ h1 {
     position: absolute;
     left: 620px;
     top: -35px;
+}
+#menuFrame{
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+    padding: 0px;
+}
+#sideFrame {
+    width: 70%;
+    height: 100vh;
+    background-color: bisque;
+    padding: 0px;
+}
+#sc {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+#videoFrame {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 0px;
+}
+.current {
+    z-index: 5;
+}
+#button1 {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "tw";
+    font-size: 30px;
+}
+#homeT {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+    
+}
+#button2 {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "tw";
+    font-size: 30px;
+}
+#aboutT {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+    
+}
+#button3 {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "tw";
+    font-size: 30px;
+}
+#scT {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+    
+}
+#button4 {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "tw";
+    font-size: 30px;
+}
+#artT {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+    
+}
+#art {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:azure;
+}
+#about {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+}
+#title1 {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    font-family: "tw";
+    display: block;
+}
+#nameT {
+    font-size: 500%;
+    position: relative;
+}
+#subT {
+    font-size: 150%;
+    position: relative;
+}
+#video1 {
+    position: absolute;
+    align-self: center;
+    width: 65vw;
+    height: 99vh;
 }
