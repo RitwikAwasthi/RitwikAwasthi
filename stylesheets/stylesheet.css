@@ -197,9 +197,81 @@ h1 {
     font-size: 150%;
     position: relative;
 }
-#video1 {
+#video2 {
     position: absolute;
     align-self: center;
-    width: 65vw;
-    height: 99vh;
+    width: 100%;
+    height: 100%;
+}
+#land {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute;
+    left: -0%;
+    top: 28.5%;
+    
+}
+#subAbout {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute;
+    left: -0%;
+    top: 48.5%;
+    
+}
+#subSc {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute;
+    left: -0%;
+    top: 68.5%;
+    
+}
+#subArt {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: table;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute;
+    left: -0%;
+    top: 88.5%;
+    
+}
+#aboutMain {
+    height: 100%;
+    width: 100%;
+}
+#aboutMainRowPic {
+    height: 20vh;
+    width: 100%;
+}
+#moreAbout {
+   height: 80vh;
+   width: 23.3vw;
+}
+#moreEdu {
+   height: 80vh;
+   width: 23.3vw;
+}
+#morePas {
+   height: 40vh;
+   width: 23.3vw;
+}
+#moreContact {
+   height: 40vh;
+   width: 23.3vw;
 }
