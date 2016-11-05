@@ -9,29 +9,61 @@
     
     <script>
     $(document).ready(function(){
-       $("#button3").click(function(){
-           $("#videoFrame").hide();
-           $("#sc").show();
-           $("#art").hide();
-           $("#about").hide()
+        $("#land").hide();
+        $("#subAbout").hide();
+        $("#subArt").hide();
+        $("#subSc").hide();
+        $("#button3").click(function(){
+           $("#videoFrame").fadeOut();
+           $("#sc").fadeIn();
+           $("#art").fadeOut();
+           $("#about").fadeOut()
        }); 
        $("#button1").click(function(){
-           $("#videoFrame").show();
-           $("#sc").hide();
-           $("#art").hide();
-           $("#about").hide()
+           $("#videoFrame").fadeIn();
+           $("#sc").fadeOut();
+           $("#art").fadeOut();
+           $("#about").fadeOut()
        });
        $("#button4").click(function(){
-           $("#art").show();
-           $("#sc").hide();
-           $("#videoFrame").hide();
-           $("#about").hide();
+           $("#art").fadeIn();
+           $("#sc").fadeOut();
+           $("#videoFrame").fadeOut();
+           $("#about").fadeOut();
        });
        $("#button2").click(function(){
-           $("#about").show();
-           $("#art").hide();
-           $("#sc").hide();
-           $("#videoFrame").hide();
+           $("#about").fadeIn();
+           $("#art").fadeOut();
+           $("#sc").fadeOut();
+           $("#videoFrame").fadeOut();
+       });
+       $("#button1").hover(function(){
+           $("#land").fadeIn('slow');
+           $("#homeT").fadeOut('slow');
+       },function(){
+           $("#homeT").fadeIn('slow');
+           $("#land").fadeOut('slow');
+       });
+       $("#button2").hover(function(){
+           $("#subAbout").fadeIn('slow');
+           $("#aboutT").fadeOut('slow');
+       },function(){
+           $("#aboutT").fadeIn('slow');
+           $("#subAbout").fadeOut('slow');
+       });
+       $("#button3").hover(function(){
+           $("#subSc").fadeIn('slow');
+           $("#scT").fadeOut('slow');
+       },function(){
+           $("#scT").fadeIn('slow');
+           $("#subSc").fadeOut('slow');
+       });
+       $("#button4").hover(function(){
+           $("#subArt").fadeIn('slow');
+           $("#artT").fadeOut('slow');
+       },function(){
+           $("#artT").fadeIn('slow');
+           $("#subArt").fadeOut('slow');
        });
     });
     </script>
@@ -51,10 +83,10 @@
                 
                 
             </div>
-            <div id="button1"><p id="homeT">Home.</p></div>
-            <div id="button2"><p id="aboutT">About.</p></div>
-            <div id="button3"><p id="scT">Soundcloud.</p></div>
-            <div id="button4"><p id="artT">Art/Graphic Design.</p></div>
+            <div id="button1"><p id="homeT">Home.</p><p id="land"><em>Landing Page</em></p></div>
+            <div id="button2"><p id="aboutT">About.</p><p id="subAbout"><em>More About Me</em></div>
+            <div id="button3"><p id="scT">Soundcloud.</p><p id="subSc"><em>My Musical Creations</em></div>
+            <div id="button4"><p id="artT">Art/Graphic Design.</p><p id="subArt"><em>Art, Photography, Graphic Design and More</em></div>
             
             
             
@@ -65,13 +97,27 @@
             <div class="col-lg-6 col-xs-6 col-sm-6" id="sideFrame">
             
             <div id="videoFrame" class="current">
-            <video id = "video1" poster="video1.png" autoplay="true" loop>
-            <source src="video1.webm">    
+            <video id = "video2" poster="video1.png" autoplay="true" loop>
+            <source src="video2.webm">    
             </video>
             </div>
             <div id="sc"></div>
             <div id="art"></div>
-            <div id="about"></div>
+            <div id="about">
+                
+                <div class="container-fluid" id="aboutMain">
+                    <div class="row" id="aboutMainRow">
+                        <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" id="aboutMainRowPic"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4" id="moreAbout"></div>
+                        <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4" id="moreEdu"></div>
+                        <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4" id="morePas"></div>
+                        <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4" id="moreContact"></div>
+                    </div>
+                </div>
+            
+            </div>
             
             </div>
 
